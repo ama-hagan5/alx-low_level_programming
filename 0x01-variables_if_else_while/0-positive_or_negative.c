@@ -18,7 +18,8 @@ int main(void)
 		printf("%i is zero\n", n);
 	}
 	else if (n<0)
-	{printf("%i is negative\n",n);
+	{
+		printf("%i is negative\n",n);
 	}
 
 	else
@@ -26,3 +27,4 @@ int main(void)
 		printf("%i is postive\n",n);
 	}
 	return (0);
+}
