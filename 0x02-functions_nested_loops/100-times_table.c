@@ -19,7 +19,7 @@ void times_table(int n)
 				z = x * y;
 				if (z > 99)
 				{
-					_putchar(',');
+					putchar(',');
 					_putchar(32);
 					_putchar((z / 100) + '0');
 					_putchar(((z / 10) % 10) + '0');
