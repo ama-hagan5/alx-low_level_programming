@@ -1,1 +1,1 @@
-More functions, more nested loop
+More functions and more nested loop in C
