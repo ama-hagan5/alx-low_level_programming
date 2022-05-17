@@ -3,8 +3,8 @@
 #include <stdio.h>
 /**
  * print_numbers -print variadic number
- * @separator: char to be printed
- * @n: variable variable
+ * @separator: char
+ * @n: variadic variable count
  * Return: void
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
