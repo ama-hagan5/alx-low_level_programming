@@ -1,25 +1,19 @@
 #include "main.h"
 /**
- * binary_to_uint - binary to uint
- * @b: string to convert
- * Return: unsigned int
+ * get_bit - returns the value of a bit at an index in a decimal number
+ * @n: number to search
+ * @index: index of the bit
  *
+ * Return: value of the bit
  */
-unsigned int binary_to_uint(const char *b)
+int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int x = 0;
+    int bit_val;
 
-	if (b == NULL)
-		return (0);
-	while (*b)
-	{
-		if (*b == '1')
-			x = (x << 1) | 1;
-		else if (*b == '0')
-			x <<= 1;
-		else
-			return (0);
-		b++;
-	}
-	return (x);
+    if (index > 63)
+        return (-1);
+
+    bit_val = (n >> index) & 1;
+
+    return (bit_val);
 }
